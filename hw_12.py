@@ -3,7 +3,7 @@ import json
 
 def make_dict():
     """Return dictionary from json-file"""
-    with open("HW.json", 'r') as json_file:
+    with open("./HW.json", 'r') as json_file:
         start_dict = json.load(json_file)
     return start_dict
 
@@ -40,7 +40,7 @@ def dict_sort_by_type(start_dict):
 
 
 def save_sorted_dict(start_dict):
-    with open('HW_result.json', 'w') as file:
+    with open('./HW_result.json', 'w') as file:
         json.dump(start_dict, file, indent=3)
 
 
